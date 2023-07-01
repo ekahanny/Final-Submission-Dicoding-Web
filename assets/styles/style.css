@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: #320000;
+    padding: 15px;
+    position: sticky;
+}
+
+nav a{
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #810034;
+    
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+.jumbotron{
+    background: url(../images/jumbotron.jpg) center;
+    padding: 30px;
+}
+
+.jumbotron h1{
+    font-family: 'Reem Kufi Ink', sans-serif;
+    color: brown;
+    font-size: 75px;
+    text-align: center;
+    margin-top: 140px;
+    text-decoration:underline;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.jumbotron p{
+    font-family: 'Amiri Quran', serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+
+}
