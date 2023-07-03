@@ -51,7 +51,7 @@ nav li{
 }
 
 .container{
-    flex: 3;
+    flex: 5;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +59,7 @@ nav li{
 
 }
 
-.container p{
+.desc{
     font-family: 'Amiri Quran', serif;
     margin: 45px;
     color:aliceblue;
@@ -79,11 +79,6 @@ main{
     display: flex;
     background-color: #320000;
 }
-
-aside {
-    flex: 1;
-
-  }
  
 .content{
     background: linear-gradient(109.6deg, rgb(6, 2, 2) 32.4%, rgb(137, 30, 47) 99.8%);
@@ -91,7 +86,7 @@ aside {
     margin: 40px;
     text-align: center;
     line-height: 35px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 #sinopsis{
@@ -104,4 +99,54 @@ aside {
 
 #season{
     order: 3;
+}
+
+section{
+    border: 2px solid #ccc;
+    padding-bottom: 30px;
+}
+
+section h3{
+    color: white;
+    margin-top: 25px;
+    margin-left: 70px;
+    text-align: left;
+    font-family: 'Amiri Quran', serif;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+section p{
+    font-family: 'Amiri Quran', serif;
+    color:aliceblue;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 70px;
+}
+
+section a{
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 70px;
+
+}
+
+section li{
+    text-align: start;
+    margin-left: 15px;
+    color: #ffffff;
+    list-style: none;
+
+}
+
+section a:hover{
+    font-weight: bold;
+    color: #810034;
+}
+
+aside {
+    flex: 2;
+
 }
