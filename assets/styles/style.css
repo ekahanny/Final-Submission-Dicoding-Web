@@ -83,7 +83,7 @@ main{
 .content{
     background: linear-gradient(109.6deg, rgb(6, 2, 2) 32.4%, rgb(137, 30, 47) 99.8%);
     width: 100%;
-    margin: 40px;
+    margin: 35px;
     text-align: center;
     line-height: 35px;
     font-size: 20px;
@@ -103,6 +103,7 @@ main{
 
 section{
     border: 2px solid #ccc;
+    margin-bottom: 5px;
     padding-bottom: 30px;
 }
 
@@ -148,5 +149,26 @@ section a:hover{
 
 aside {
     flex: 2;
+}
 
+.information img{
+    width: 60%;
+}
+
+.information{
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 40px;
+    display: block;
+}
+
+footer{
+    padding: 20px;
+    color: #fff;
+    background-color: #4d0606;
+    text-align: center;
+    border: 2px solid black;
+    font-family: 'Amiri Quran', serif;
+    font-size: 20px;
 }
