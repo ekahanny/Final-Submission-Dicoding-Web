@@ -6,8 +6,10 @@
 
 nav{
     background-color: #320000;
-    padding: 15px;
-    position: sticky;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
 nav a{
@@ -17,7 +19,6 @@ nav a{
     text-decoration: none;
     display: inline;
     padding: 14px 16px;
-
 }
 
 nav a:hover{
