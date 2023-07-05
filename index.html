@@ -15,9 +15,18 @@
     
     <header>
         <nav>
-            <li><a href="#about">About</a></li>
-            <li><a href="#sinopsis">Sinopsis</a></li>
-            <li><a href="#season">Season</a></li>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Season</button>
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="#season1">Season 1</a>
+                  <a href="#season2">Season 2</a>
+                  <a href="#season3">Season 3</a>
+                  <a href="#season4">Season 4</a>
+                </div>
+            </div>
+            <a href="#sinopsis">Sinopsis</a>
+            <a href="#about">About</a>
+
         </nav>
 
         <div class="jumbotron">
@@ -73,7 +82,7 @@
                     tahun 2017 ini telah menghasilkan 4 season yang dapat dilihat pada daftar berikut:
                 </p>
 
-                <section class="season-part">
+                <section class="season-part" id="season1">
                     <h3>Season 1</h3>
                     <p> Keanehan terjadi di Hawkins, Indiana, ketika hilangnya seorang bocah laki-laki 
                         tiba-tiba memunculkan gadis muda dengan kekuatan yang tidak wajar. </p>
@@ -89,7 +98,7 @@
                     </ol>
                 </section>
 
-                <section class="season-part">
+                <section class="season-part" id="season2">
                     <h3>Season 2</h3>
                     <p> Peristiwa menghilangnya Will yang aneh hampir setahun berlalu. 
                         Namun, kehidupan di Hawkins belum kembali normal. 
@@ -107,7 +116,7 @@
                     </ol>
                 </section>
 
-                <section class="season-part">
+                <section class="season-part" id="season3">
                     <h3>Season 3</h3>
                     <p> Benih-benih asmara. Mal baru. Tikus-tikus gila berlari menuju bahaya. 
                         Inilah musim panas tahun 1985 di Hawkins... 
@@ -124,7 +133,7 @@
                     </ol>
                 </section>
 
-                <section class="season-part">
+                <section class="season-part" id="season4">
                     <h3>Season 4</h3>
                     <p> Kegelapan kembali ke Hawkins tepat pada saat liburan musim semi, 
                         memicu teror baru, memori yang mengganggu, dan ancaman baru yang mencekam. </p>
@@ -155,20 +164,20 @@
                 <section>
                     <table>
                         <tr>
-                            <th class="">Genre</th>
-                            <th class="ans"> Fantasi, Horor</th>
+                            <th>Genre</th>
+                            <th> Fantasi, Horor</th>
                         </tr>
                         <tr>
                             <th>Director</th>
-                            <th class="ans">The Duffer Brothers</th>
+                            <th>The Duffer Brothers</th>
                         </tr>
                         <tr>
                             <th>Country</th>
-                            <th class="ans">USA</th>
+                            <th>USA</th>
                         </tr>
                         <tr>
                             <th>Released</th>
-                            <th class="ans">July, 2016</th>
+                            <th>July, 2016</th>
                         </tr>
                     </table>
                 </section>
@@ -183,6 +192,22 @@
             &copy; 2023, Eka Hanny Oktavia
         </p>
     </footer>
+
+    <script>
+
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        </script>
 
 </body>
 </html>
